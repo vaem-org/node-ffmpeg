@@ -11,7 +11,7 @@ RUN apt-get -q update && apt-get -y install \
     libtool \
     libvorbis-dev \
     pkg-config \
-    texinfo \
+    texinfo \fd
     wget \
     zlib1g-dev \
     yasm \
