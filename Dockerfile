@@ -11,7 +11,7 @@ RUN apt-get -q update && apt-get -y install \
     libtool \
     libvorbis-dev \
     pkg-config \
-    texinfo \fd
+    texinfo \
     wget \
     zlib1g-dev \
     yasm \
@@ -66,6 +66,7 @@ RUN cd ~ && \
       --enable-libvpx \
       --enable-libx264 \
       --enable-libx265 \
+      --enable-openssl \
       --enable-nonfree && \
     PATH="$HOME/bin:$PATH" make -j 16 && \
     make install && \
