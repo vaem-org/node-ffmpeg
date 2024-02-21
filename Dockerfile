@@ -590,8 +590,8 @@ LABEL       org.opencontainers.image.authors="julien@rottenberg.info" \
 
 ENV         LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib64
 
-CMD         ["--help"]
-ENTRYPOINT  ["ffmpeg"]
+#CMD         ["--help"]
+#ENTRYPOINT  ["ffmpeg"]
 
 COPY --from=build /usr/local /usr/local
 
